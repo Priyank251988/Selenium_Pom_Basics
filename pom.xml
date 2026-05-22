@@ -19,7 +19,7 @@
     <groupId>org.testng</groupId>
     <artifactId>testng</artifactId>
     <version>7.12.0</version>
-    <scope>test</scope>
+    
 </dependency>
     <!--Apache poi dependency-->
     <dependency>
@@ -71,7 +71,7 @@
     <groupId>com.google.inject</groupId>
     <artifactId>guice</artifactId>
     <version>7.0.0</version>
-    <scope>compile</scope>
+    
 </dependency>
 
 		<!-- POI JARS ENDS -->
@@ -81,7 +81,7 @@
     <groupId>com.aventstack</groupId>
     <artifactId>extentreports</artifactId>
     <version>5.1.2</version>
-    <scope>compile</scope>
+   
 </dependency>
 
       <!--log4j dependency-->
@@ -105,5 +105,13 @@
                 </configuration>
             </plugin>
         </plugins>
+        <testResources>
+<testResource>
+<directory>src/test/resources/com/ab/properties</directory>
+<includes>
+<include>log4j.properties</include>
+</includes>
+</testResource>
+</testResources>
         </build>
 </project>
