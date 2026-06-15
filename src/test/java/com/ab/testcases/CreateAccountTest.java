@@ -1,5 +1,6 @@
 package com.ab.testcases;
 
+import org.testng.Assert;
 import org.testng.annotations.Test;
 
 import com.ab.basepage.Page;
@@ -16,6 +17,7 @@ public class CreateAccountTest extends Basetest {
 	  AccountHomepage ahp= Page.menu.gotoAccounts();
 	  CreateAccountPage cap=ahp.gotoCreateAccount();
 	  cap.createAccount("Test1");
+	  //Assert.fail("create account failed");
 	}
 
 }
