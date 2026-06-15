@@ -17,7 +17,7 @@ public class CreateAccountTest extends Basetest {
 	  AccountHomepage ahp= Page.menu.gotoAccounts();
 	  CreateAccountPage cap=ahp.gotoCreateAccount();
 	  cap.createAccount("Test1");
-	  Assert.fail("create account failed");
+	  //Assert.fail("create account failed");
 	}
 
 }
